@@ -3,7 +3,7 @@ const CHECKBOX =  document.getElementById('myCheckbox');
 const VISABTN = document.getElementById('visaBtn'); 
 const MASTERCARDBTN = document.getElementById('masterCardbtn'); 
 const PAYPAL = document.getElementById('paypalBtn'); 
-
+let saida = document.getElementById('js-p')
 
 let result = '';
 
@@ -27,6 +27,6 @@ if(CHECKBOX.checked) {
  }
 
 
- let resultado = document.getElementById('js-p').innerHTML = result;
+ let resultado = saida.innerHTML = result;
 } 
 
