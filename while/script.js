@@ -1,3 +1,5 @@
+/*
+
 let userName = ''; 
 
 while(userName == '' || userName == null ) { 
@@ -5,3 +7,11 @@ while(userName == '' || userName == null ) {
 }
 
 console.log(userName)
+*/
+
+let number = 0; 
+
+while(number <= 10) {
+  number += 1;
+  console.log(number) 
+}
