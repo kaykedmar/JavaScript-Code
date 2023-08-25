@@ -1,3 +1,4 @@
+/*
 document.getElementById('submit').onclick =  function(idade) {
 
   let entrada = Number(document.getElementById('meuTexto').value); 
@@ -5,7 +6,7 @@ document.getElementById('submit').onclick =  function(idade) {
  
 
   if(entrada >= 18) { 
-    result = 'Voce e adulto!!'¬
+    result = 'Voce e adulto!!'
   } else if (entrada < 18) { 
     result = 'Voce nao e adulto!'
   } else { 
@@ -14,6 +15,24 @@ document.getElementById('submit').onclick =  function(idade) {
   resultado.innerHTML = result
   console.log(entrada)
  }
+*/
 
 
+function verificaIdade() { 
+  const ENTRADA = Number(document.getElementById('meuTexto').value);
+  result = '';
+
+  if (isNaN(ENTRADA)) { 
+    result = "Insira uma idade válida";
+  } else if (ENTRADA >= 18) { 
+    result = "Você é adulto!";
+  } else if (ENTRADA < 18) { 
+    result = "Você não é adulto!";
+  }  
+ 
+
+  document.getElementById('result').innerHTML = result;
+} 
+
+document.getElementById('submit').onclick = verificaIdade
 
