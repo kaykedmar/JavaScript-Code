@@ -12,7 +12,9 @@ document.getElementById('js-submit').onclick = function() {
  else if (guess > answer) { 
   alert('Muito longe da resposta')
  }
- else  { 
+ else if (guess < answer) { 
   alert('Esta Proxima da resposta')
+ } else { 
+  alert('Insira um numero valido')
  }
 }
